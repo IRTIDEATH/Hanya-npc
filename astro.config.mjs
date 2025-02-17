@@ -8,29 +8,29 @@ import react from '@astrojs/react';
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [starlight({
-      title: 'Hanya npc',
+  integrations: [
+    starlight({
+      title: "Hanya npc",
       social: {
-          github: 'https://github.com/withastro/starlight',
+        github: "https://github.com/IRTIDEATH/Hanya-npc",
       },
       sidebar: [
-          {
-              label: 'Kenalan dari sini',
-              items: [
-                  // Each item here is one entry in the navigation menu.
-                  { label: 'Kenapa npc', slug: 'kenalan/episode_1' },
-              ],
-          },
+        {
+          label: "Kenalan dari sini",
+          items: [
+            // Each item here is one entry in the navigation menu.
+            { label: "Kenapa npc", slug: "kenalan/episode_1" },
+          ],
+        },
         //   {
         //       label: 'Reference',
         //       autogenerate: { directory: 'reference' },
         //   },
       ],
-      customCss: [
-        './src/styles/global.css'
-      ],
-
-  }), react()],
+      customCss: ["./src/styles/global.css"],
+    }),
+    react(),
+  ],
 
   vite: {
     plugins: [tailwindcss()],
