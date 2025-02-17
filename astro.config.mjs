@@ -1,16 +1,17 @@
 // @ts-check
-import { defineConfig } from 'astro/config';
-import starlight from '@astrojs/starlight';
+import { defineConfig } from "astro/config";
+import starlight from "@astrojs/starlight";
 
-import tailwindcss from '@tailwindcss/vite';
+import react from "@astrojs/react";
 
-import react from '@astrojs/react';
+import tailwindcss from "@tailwindcss/vite";
 
 // https://astro.build/config
 export default defineConfig({
   integrations: [
     starlight({
       title: "Hanya npc",
+      customCss: ['./src/styles/ui-style.css'],
       social: {
         github: "https://github.com/IRTIDEATH/Hanya-npc",
       },
@@ -22,12 +23,11 @@ export default defineConfig({
             { label: "Kenapa npc", slug: "kenalan/episode_1" },
           ],
         },
-        //   {
-        //       label: 'Reference',
-        //       autogenerate: { directory: 'reference' },
-        //   },
+        {
+          label: "Article",
+          items: [{ label: "Discord wpu", slug: "article/episode_1" }],
+        },
       ],
-      customCss: ["./src/styles/global.css"],
     }),
     react(),
   ],
