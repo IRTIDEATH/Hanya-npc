@@ -57,6 +57,6 @@ Kami tunggu kehadiranmu di sana! Siapkan semangat belajar, kopi, dan cemilan fav
 
 ## 💎 Tambahan
 
-![/src/assets/out.png](/src/assets/out.png)
+![WPU](/out.png)
 
 Art source : Edqe14/Yuka
