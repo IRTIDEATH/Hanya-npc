@@ -25,7 +25,10 @@ export default defineConfig({
         },
         {
           label: "Article",
-          items: [{ label: "Discord wpu", slug: "article/episode_1" }],
+          items: [
+            { label: "Discord wpu", slug: "article/episode_1" },
+            { label: "Shadcn UI", slug: "article/episode_2" },
+          ],
         },
       ],
     }),
